@@ -1,13 +1,16 @@
 .nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #eaeaea;
+  color: var(--clr-txt);
   .nav-header {
     display: flex;
     gap: 1rem;
     align-items: center;
-    margin-right: 5rem;
+    margin-right: 7rem;
     .nav-logo {
       color: #08fdd8;
       font-size: 2rem;
@@ -23,12 +26,12 @@
     gap: 1rem;
     padding: 0;
     & a {
-      color: #eaeaea;
+      color: var(--clr-txt);
       text-decoration: none;
     }
     .github-icon {
       display: inline-flex;
-      font-size: 2.65rem;
+      font-size: 3.25rem;
       cursor: pointer;
     }
   }

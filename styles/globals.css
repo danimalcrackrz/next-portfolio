@@ -1,6 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
   background: #181818;
   font-family: "JetBrains Mono";
+}
+
+:root {
+  --clr-txt: #eaeaea;
+  --border-radius: 0.5rem;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
