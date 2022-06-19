@@ -1,0 +1,35 @@
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #eaeaea;
+  .nav-header {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-right: 5rem;
+    .nav-logo {
+      color: #08fdd8;
+      font-size: 2rem;
+      margin-top: 5px;
+    }
+    .nav-title {
+      font-size: 1.25rem;
+    }
+  }
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0;
+    & a {
+      color: #eaeaea;
+      text-decoration: none;
+    }
+    .github-icon {
+      display: inline-flex;
+      font-size: 2.65rem;
+      cursor: pointer;
+    }
+  }
+}
