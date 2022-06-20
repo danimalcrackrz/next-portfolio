@@ -31,6 +31,9 @@
     width: 90%;
     text-align: left;
     line-height: 0.9rem;
+    .main-header-decorator {
+      color: var(--clr-accent);
+    }
     .main-avatar-border {
       border-radius: 50%;
       border: 3px solid white;
@@ -40,5 +43,14 @@
       position: absolute;
       border: none;
     }
+  }
+  .main-content {
+    display: flex;
+    align-items: center;
+    color: var(--clr-txt);
+    border-radius: (--border-radius);
+    padding: 1rem;
+    width: 90%;
+    text-align: left;
   }
 }

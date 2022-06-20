@@ -3,6 +3,7 @@ import dynamic from "next/dynamic"
 import Image from "next/image"
 import Avatar from "../public/assets/me.jpeg"
 import Loading from "./Loading"
+import About from "./About"
 
 const Main = () => {
   const Cloud = dynamic(() => import("./Cloud"))
@@ -19,7 +20,10 @@ const Main = () => {
       <div className='main-header'>
         <div>
           <h2>Daniel Shaw</h2>
-          <p>Front-End Developer | Freelancer</p>
+          <p>
+            Front-End Developer <span className='main-header-decorator'>|</span>{" "}
+            Freelancer
+          </p>
         </div>
         <span className='main-avatar-border'>
           <Image
@@ -30,6 +34,9 @@ const Main = () => {
             width={100}
           />
         </span>
+      </div>
+      <div className='main-content'>
+        <About />
       </div>
     </div>
   )

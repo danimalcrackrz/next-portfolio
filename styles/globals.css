@@ -10,6 +10,7 @@ body {
 }
 
 :root {
+  --clr-accent: #08fdd8;
   --clr-txt: #eaeaea;
   --border-radius: 0.5rem;
 }
