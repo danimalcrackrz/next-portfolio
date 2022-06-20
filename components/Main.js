@@ -1,12 +1,20 @@
-import React from "react"
+import React, { Suspense } from "react"
+import dynamic from "next/dynamic"
 import Image from "next/image"
 import Avatar from "../public/assets/me.jpeg"
+import Loading from "./Loading"
 
 const Main = () => {
+  const Cloud = dynamic(() => import("./Cloud"))
   return (
     <div className='main'>
+      <Suspense fallback={<Loading />}>
+        <div className='main-cloud'>
+          <Cloud />
+        </div>
+      </Suspense>
       <p className='main-intro'>
-        Hello, I&apos;m a web developer based in Austin Tx
+        Hello, I&apos;m Daniel, a web developer based in Austin, Tx
       </p>
       <div className='main-header'>
         <div>
