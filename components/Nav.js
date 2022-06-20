@@ -16,9 +16,14 @@ const Nav = () => {
         <Link href='/'>Projects</Link>
         <Link href='/Contact'>Contact</Link>
         <Link href='/Source'>
-          <span className='github-icon'>
+          <a
+            className='github-icon'
+            href='https://github.com/danimalcrackrz'
+            target='_blank'
+            rel='noreferrer'
+          >
             <DiGithubFull />
-          </span>
+          </a>
         </Link>
       </ul>
     </div>
