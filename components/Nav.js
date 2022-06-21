@@ -13,7 +13,7 @@ const Nav = () => {
         <p className='nav-title'>Daniel Shaw</p>
       </a>
       <ul className='nav-links'>
-        <Link href='/'>Projects</Link>
+        <Link href='/portfolio'>Projects</Link>
         <Link href='/Contact'>Contact</Link>
         <Link href='/Source'>
           <a

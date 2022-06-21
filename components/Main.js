@@ -1,7 +1,7 @@
 import React, { Suspense } from "react"
 import dynamic from "next/dynamic"
 import Image from "next/image"
-import Avatar from "../public/assets/me.jpeg"
+import Avatar from "../public/images/me.jpeg"
 import Loading from "./Loading"
 import About from "./About"
 

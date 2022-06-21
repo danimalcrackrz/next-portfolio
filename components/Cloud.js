@@ -3,6 +3,8 @@ import { Cloud } from "react-icon-cloud"
 
 const IconCloud = () => {
   const languages = [
+    "Html5",
+    "CSS3",
     "JavaScript",
     "ReactJs",
     "NodeJs",

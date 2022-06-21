@@ -1,0 +1,22 @@
+{
+  "projects": [
+    {
+      "image": "/images/portfolioimg3.png",
+      "title": "Bob's Burger Search",
+      "github": "https://github.com/danimalcrackrz/bobs-burgers",
+      "demo": "https://bobs-burgers-search.netlify.app/"
+    },
+    {
+      "image": "/images/portfolioimg2.png",
+      "title": "Note Taker App",
+      "github": "https://github.com/danimalcrackrz/note-taker",
+      "demo": "#"
+    },
+    {
+      "image": "/images/portfolioimg.png",
+      "title": "Portfolio Website",
+      "github": "https://github.com/danimalcrackrz/react-portfolio",
+      "demo": "#"
+    }
+  ]
+}
