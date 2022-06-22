@@ -13,6 +13,7 @@ body {
   --clr-accent: #08fdd8;
   --clr-txt: #eaeaea;
   --border-radius: 0.5rem;
+  --transition: 200ms ease-in-out;
 }
 
 .app {
