@@ -11,14 +11,31 @@
     width: 450px;
   }
   .main-intro {
-    background: #323234;
-    color: var(--clr-txt);
-    opacity: 0.7;
+    outline: 2px solid #323234;
     border-radius: var(--border-radius);
     padding: 1rem;
     width: 90%;
     text-align: center;
     font-size: 1rem;
+    background-image: linear-gradient(
+      to right,
+      red,
+      orange,
+      yellow,
+      green,
+      blue,
+      indigo,
+      red
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: rainbow-animation 40s linear infinite;
+
+    @keyframes rainbow-animation {
+      to {
+        background-position: 4500vh;
+      }
+    }
   }
   .main-header {
     display: flex;
@@ -27,6 +44,7 @@
     align-items: center;
     color: var(--clr-txt);
     border-radius: var(--border-radius);
+    margin-top: 6rem;
     padding: 1rem;
     width: 90%;
     text-align: left;

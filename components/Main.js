@@ -22,7 +22,7 @@ const Main = () => {
           <h2>Daniel Shaw</h2>
           <p>
             Front-End Developer <span className='main-header-decorator'>|</span>{" "}
-            Freelancer
+            Freelancer <span className='main-header-decorator'>|</span> Designer
           </p>
         </div>
         <span className='main-avatar-border'>

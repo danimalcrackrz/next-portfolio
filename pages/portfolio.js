@@ -21,5 +21,3 @@ const portfolio = ({ projects }) => {
 }
 
 export default portfolio
-
-/* it would be cool to have each tech block, link to the technology site */
