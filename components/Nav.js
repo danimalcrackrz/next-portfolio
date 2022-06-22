@@ -1,12 +1,18 @@
 import Link from "next/link"
 import React from "react"
+import { motion } from "framer-motion"
 import { DiGithubFull } from "react-icons/di"
 import { SiReact } from "react-icons/si"
 import { CgHomeAlt } from "react-icons/cg"
 
 const Nav = () => {
   return (
-    <div className='nav'>
+    <motion.div
+      initial={{ opacity: 0, y: -100 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1.5 }}
+      className='nav'
+    >
       <a className='nav-header'>
         <span className='nav-logo'>
           <SiReact />
@@ -30,7 +36,7 @@ const Nav = () => {
           </a>
         </Link>
       </ul>
-    </div>
+    </motion.div>
   )
 }
 

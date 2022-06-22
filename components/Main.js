@@ -1,6 +1,7 @@
 import React, { Suspense } from "react"
 import dynamic from "next/dynamic"
 import Image from "next/image"
+import { motion } from "framer-motion"
 import Avatar from "../public/images/me.jpeg"
 import Loading from "./Loading"
 import About from "./About"
@@ -10,13 +11,23 @@ const Main = () => {
   return (
     <div className='main'>
       <Suspense fallback={<Loading />}>
-        <div className='main-cloud'>
+        <motion.div
+          initial={{ scale: 0.6 }}
+          animate={{ scale: 1 }}
+          transition={{ duration: 0.8 }}
+          className='main-cloud'
+        >
           <Cloud />
-        </div>
+        </motion.div>
       </Suspense>
-      <p className='main-intro'>
+      <motion.p
+        initial={{ opacity: 0, scale: 1.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.8 }}
+        className='main-intro'
+      >
         Hello, I&apos;m Daniel, a web developer based in Austin, Tx
-      </p>
+      </motion.p>
       <div className='main-header'>
         <div>
           <h2>Daniel Shaw</h2>

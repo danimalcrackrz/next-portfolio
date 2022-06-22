@@ -1,4 +1,5 @@
 import Layout from "../components/Layout"
+import { AnimatePresence } from "framer-motion"
 import "../styles/globals.css"
 import "../styles/Nav.scss"
 import "../styles/Main.scss"
@@ -7,9 +8,11 @@ import "../styles/Portfolio.scss"
 
 function MyApp({ Component, pageProps }) {
   return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
+    <AnimatePresence exitBeforeEnter>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </AnimatePresence>
   )
 }
 

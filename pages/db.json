@@ -2,7 +2,7 @@
   "projects": [
     {
       "image": "/images/portfolioimg3.png",
-      "title": "Bob's Burger Search",
+      "title": "Bob's Burger Wiki",
       "github": "https://github.com/danimalcrackrz/bobs-burgers",
       "demo": "https://bobs-burgers-search.netlify.app/"
     },
