@@ -1,12 +1,14 @@
-import React, { Suspense } from "react"
+import React, { Suspense, useRef } from "react"
 import dynamic from "next/dynamic"
 import Image from "next/image"
 import { motion } from "framer-motion"
+import { IoIosArrowDown } from "react-icons/io"
 import Avatar from "../public/images/me.jpeg"
 import Loading from "./Loading"
 import About from "./About"
 
 const Main = () => {
+  const scrollBottom = useRef()
   const Cloud = dynamic(() => import("./Cloud"))
   return (
     <div className='main'>
@@ -28,6 +30,18 @@ const Main = () => {
       >
         Hello, I&apos;m Daniel, a web developer based in Austin, Tx
       </motion.p>
+      <motion.p
+        initial={{ opacity: 0.5, y: "-20%" }}
+        animate={{ opacity: 1, y: "5%" }}
+        transition={{ duration: 1, repeatType: "mirror", repeat: "Infinity" }}
+        className='main-arrow-icon'
+      >
+        <IoIosArrowDown
+          onClick={() => {
+            scrollBottom.current.scrollIntoView({ behavior: "smooth" })
+          }}
+        />
+      </motion.p>
       <div className='main-header'>
         <div>
           <h2>Daniel Shaw</h2>
@@ -46,7 +60,7 @@ const Main = () => {
           />
         </span>
       </div>
-      <div className='main-content'>
+      <div className='main-content' ref={scrollBottom}>
         <About />
       </div>
     </div>
