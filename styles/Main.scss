@@ -57,6 +57,7 @@
     width: 90%;
     text-align: left;
     line-height: 0.9rem;
+    transition: var(--transition);
     .main-header-decorator {
       color: var(--clr-accent);
     }

@@ -6,6 +6,7 @@ const Form = () => {
 
   const sendEmail = (e) => {
     e.preventDefault()
+
     emailjs
       .sendForm(
         "service_jzkzqjo",
@@ -21,8 +22,10 @@ const Form = () => {
           console.log(error.text)
         }
       )
+
     e.target.reset()
   }
+
   return (
     <div>
       <form ref={form} onSubmit={sendEmail} className='contact-form'>
@@ -34,9 +37,7 @@ const Form = () => {
           placeholder='Message'
           required
         ></textarea>
-        <button type='submit' className='btn btn-primary'>
-          Send Message
-        </button>
+        <button type='submit'>Send Message</button>
       </form>
     </div>
   )
