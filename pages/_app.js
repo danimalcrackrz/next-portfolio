@@ -5,6 +5,7 @@ import "../styles/Nav.scss"
 import "../styles/Main.scss"
 import "../styles/About.scss"
 import "../styles/Portfolio.scss"
+import "../styles/Form.scss"
 
 function MyApp({ Component, pageProps }) {
   return (

@@ -24,7 +24,7 @@ const Nav = () => {
           <CgHomeAlt className='home-icon' />
         </Link>
         <Link href='/portfolio'>Projects</Link>
-        <Link href='/Contact'>Contact</Link>
+        <Link href='/contact'>Contact</Link>
         <Link href='/Source'>
           <a
             className='github-icon'

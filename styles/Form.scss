@@ -1,0 +1,51 @@
+.contact-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+    & input,
+    textarea {
+      outline: 1px solid var(--clr-accent);
+      background: var(--clr-background);
+      color: var(--clr-txt);
+      border: none;
+      border-radius: var(--border-radius);
+      width: 400px;
+      padding: 1rem;
+      resize: none;
+    }
+    & button {
+      position: relative;
+      font-size: 1.2rem;
+      background: none;
+      color: var(--clr-txt);
+      outline: 1px solid var(--clr-accent);
+      border: none;
+      border-radius: var(--border-radius);
+      padding: 1rem;
+      overflow: hidden;
+      z-index: 1;
+      transition: 250ms;
+      &:hover {
+        color: black;
+      }
+      &:hover::before {
+        content: "";
+        height: 4500vh;
+        width: 4500vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: var(--clr-accent);
+        z-index: -1;
+      }
+    }
+  }
+}
