@@ -55,3 +55,11 @@
     }
   }
 }
+
+@media screen and (max-width: 800px) {
+  .nav {
+    .nav-header {
+      display: none;
+    }
+  }
+}

@@ -2,13 +2,6 @@
   box-sizing: border-box;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  background: #181818;
-  font-family: "JetBrains Mono";
-}
-
 :root {
   --clr-accent: #08fdd8;
   --clr-txt: #eaeaea;
@@ -16,8 +9,17 @@ body {
   --transition: 200ms ease-in-out;
 }
 
-.app {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+body {
+  margin: 0;
+  padding: 0;
+  background: #181818;
+  font-family: "JetBrains Mono, helvetica";
+}
+
+@media screen and (min-width: 800px) {
+  .app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }

@@ -20,9 +20,11 @@ const portfolio = ({ projects }) => {
       exit={{ opacity: 0 }}
       className='portfolio'
     >
-      {projects.map((project, id) => (
-        <Card key={id} {...project} />
-      ))}
+      <div className='portfolio-card-area'>
+        {projects.map((project, id) => (
+          <Card key={id} {...project} />
+        ))}
+      </div>
     </motion.div>
   )
 }
