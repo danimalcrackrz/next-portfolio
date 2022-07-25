@@ -1,3 +1,14 @@
+@media screen and (max-width: 500px) {
+  .portfolio-card-area {
+    flex-direction: column;
+    margin-top: 25rem;
+    .portfolio-card {
+      margin: 1rem;
+      width: auto;
+    }
+  }
+}
+
 .portfolio,
 .portfolio-card-area {
   display: flex;
@@ -45,16 +56,6 @@
         width: 100%;
         border-radius: var(--border-radius);
       }
-    }
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .portfolio-card-area {
-    flex-direction: column;
-    margin-top: 25rem;
-    .portfolio-card {
-      margin: 1rem;
     }
   }
 }
